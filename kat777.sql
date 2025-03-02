@@ -1988,12 +1988,6 @@ INSERT INTO `visits` (`id`, `source`, `createdAt`, `ip`) VALUES
 --
 
 --
--- Contraintes pour la table `cancels`
---
-ALTER TABLE `cancels`
-  ADD CONSTRAINT `cancels_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
-
---
 -- Contraintes pour la table `error_requests`
 --
 ALTER TABLE `error_requests`
